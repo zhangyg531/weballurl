@@ -11,16 +11,21 @@ weballurlr 可以递归获取一个网站的所有href标签下的url，多个�
 - 适用于python3.6以上
 - 调用传入http://xxx or https://xxx即可运行返回结果
 - 根据网站的大小时间长短不一样
-
 、
 
-## Installation
-
+## 安装
 
 ```sh
 pip install xx
 ```
 
+## 使用
+```
+from weballurl.geturl import geturl
+b = geturl()
+a = b.startres('https://blog.csdn.net/weixin_41194129/article/details/110459615', 'csdn.net')
+print(a)
+```
 ## License
 
 MIT
