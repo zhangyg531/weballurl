@@ -8,7 +8,7 @@ weballurlr 可以递归获取一个网站的所有href标签下的url，多个�
 - ✨Magic ✨
 
 ## 注意
-
+- 适用于python3.6以上
 - 调用传入http://xxx or https://xxx即可运行返回结果
 - 根据网站的大小时间长短不一样
 
@@ -16,21 +16,10 @@ weballurlr 可以递归获取一个网站的所有href标签下的url，多个�
 
 ## Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
-
-Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd dillinger
-npm i
-node app
+pip install xx
 ```
-
-For production environments...
-
-```sh
-npm install --production
-NODE_ENV=production node app
 
 ## License
 
