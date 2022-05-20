@@ -26,6 +26,8 @@ b = geturl()
 a = b.startres('https://blog.csdn.net/weixin_41194129/article/details/110459615', 'csdn.net')
 print(a)
 ```
+- 最大递归深度10000
+- 生成文件：每新增一条url就学追加写到url.txt
 ## License
 
 MIT

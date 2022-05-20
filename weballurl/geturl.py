@@ -3,7 +3,10 @@ import traceback
 import requests
 from fake_useragent import UserAgent
 import re
-from delay_wrapper import delayed
+import sys
+from .delay_wrapper import delayed
+
+sys.setrecursionlimit(100000)
 
 
 class geturl:
@@ -14,7 +17,7 @@ class geturl:
         self.url_list = []
         self.err_url = []
 
-    # @delayed(0)
+    @delayed(0)
     def request(self, url, domain):
         try:
             res = requests.get(url, headers=self.header, timeout=3)
@@ -29,7 +32,10 @@ class geturl:
         for link in all_url:
             if (link.startswith('http')) and (link not in self.url_list) and (domain in link):
                 self.url_list.append(link)
-                print(self.url_list)
+                f = open('url.txt', 'a+', encoding='utf-8')
+                f.write(str(link) + '\n')
+                f.close()
+                print(link)
                 self.request(link, domain)
 
     def startres(self, url, domain):
