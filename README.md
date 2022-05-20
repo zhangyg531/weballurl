@@ -23,8 +23,8 @@ pip install xx
 ```
 from weballurl.geturl import geturl
 b = geturl()
-a = b.startres('https://blog.csdn.net/weixin_41194129/article/details/110459615', 'csdn.net')
-print(a)
+# startres('网站链接', '域名', 递归最长时间, 递归最大次数, is_external默认为0不获取外链， 为1时获取外链)
+a = b.startres('https://blog.csdn.net/weixin_41194129/article/details/110459615', 'csdn.net', 300, 300, is_external=0)
 ```
 - 最大递归深度10000
 - 生成文件：每新增一条url就学追加写到url.txt

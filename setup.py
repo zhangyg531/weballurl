@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'weballurl',         # How you named your package folder (MyLib)
   packages = ['weballurl'],   # Chose the same as "name"
-  version = '1.1.4',      # Start with a small number and increase it with every change you make
+  version = '1.1.6',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = '获取一个指定网站所有的本站url；Gets all site urls for a specified site',   # Give a short description about your library
   author = 'zyg0531',                   # Type in your name
